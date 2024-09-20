@@ -1,0 +1,13 @@
+Input:
+Name : Jose
+Gross Salary : Rp5000000
+
+Output:
+Payslip for Employee
+---------------------
+Name : Jose
+Gross Salary : Rp 5000000
+Tax (20%) : Rp 1000000
+Installment : Rp 200000
+Insurance : Rp 150000
+Net Salary : Rp 3650000
