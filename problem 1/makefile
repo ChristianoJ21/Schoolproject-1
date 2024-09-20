@@ -1,7 +1,7 @@
 OUTPUT = salary_calculator
 CXX = g++
 CXXFLAGS = -Wall -std=c++11
-SRC = main.cpp
+SRC = payslip.cpp
 all: $(OUTPUT)
 $(OUTPUT): $(SRC)
 	$(CXX) $(CXXFLAGS) -o $(OUTPUT) $(SRC)
