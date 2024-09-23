@@ -5,10 +5,12 @@
 #include <string>
 using namespace std;
 
+// Global variables for simplicity
 string name;
 int salary;
 double tax, net_salary;
 
+// Function to handle user input and calculate payslip details
 string generatePayslip() {
     cout << "Name : ";
     cin >> name;
@@ -65,13 +67,6 @@ int main() {
             cout << "Got: \"" << generated_output << "\"" << endl;
         }
         test_num++;
-    }
-
-    testFile.close();
-    return 0;
-}
-
-
     }
 
     testFile.close();
