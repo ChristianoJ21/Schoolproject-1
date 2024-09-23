@@ -3,7 +3,7 @@ using namespace std;
 
 string name;
 int salary;
-double tax, net_salary;
+double tax, net_salary, taxp;
 
 int main()
 {
@@ -12,18 +12,21 @@ int main()
     cin >> name;
     cout << "Gross Salary : Rp";
     cin >> salary;
+    cout << "Tax (%) : ";
+    cin >> taxp;
     cout << endl;
     
-    tax = 0.2 * salary;
-    net_salary = salary - tax - 200000 - 150000;
+    
+    tax = taxp/100 * salary;
+    net_salary = salary - tax - 100000 - 50000;
     
     cout << "Payslip for Employee" << endl;
     cout << "---------------------" << endl;
     cout << "Name : " << name << endl;
     cout << "Gross Salary : Rp " << salary << endl;
-    cout << "Tax (20%) : Rp " << tax << endl;
-    cout << "Installment : Rp 200000" << endl;
-    cout << "Insurance : Rp 150000" << endl;
+    cout << "Tax " << "(" << taxp << "%)" << ": Rp " << tax << endl;
+    cout << "Installment : Rp 100000" << endl;
+    cout << "Insurance : Rp 50000" << endl;
     cout << "Net Salary : Rp " << net_salary << endl;
     
     return 0;
