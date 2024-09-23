@@ -1,9 +1,14 @@
-John 500000
+Input : 
+Name : jokowi
+Gross Salary : Rp50000000
+Tax (%) : 15
+
+Expected Output :
 Payslip for Employee
 ---------------------
-Name : John
-Gross Salary : Rp 500000
-Tax (20%) : Rp 100000
-Installment : Rp 200000
-Insurance : Rp 150000
-Net Salary : Rp 150000
+Name : jokowi
+Gross Salary : Rp 50000000
+Tax (25%): Rp 1.25e+07
+Installment : Rp 100000
+Insurance : Rp 50000
+Net Salary : Rp 3.735e+07
