@@ -47,12 +47,16 @@ int main() {
     }
 
     int test_num = 1;
+    // Loop through test file
     while (testFile >> input_name >> input_salary && getline(testFile >> ws, expected_output)) {
+        // Simulate the input for testing by setting global variables
         name = input_name;
         salary = input_salary;
 
+        // Generate payslip based on the test case
         string generated_output = generatePayslip();
 
+        // Compare generated output with expected output
         if (generated_output == expected_output) {
             cout << "Test " << test_num << " passed!" << endl;
         } else {
@@ -66,6 +70,7 @@ int main() {
     testFile.close();
     return 0;
 }
+
 
     }
 
